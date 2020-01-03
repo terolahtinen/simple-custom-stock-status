@@ -50,7 +50,7 @@ class AddDeliveryTextAttribute implements DataPatchInterface, PatchRevertableInt
             'delivery_text',
             [
                 'type' => 'varchar',
-                'label' => 'Toimitusaikatieto',
+                'label' => 'Delivery information',
                 'input' => 'text',
                 'source' => '',
                 'frontend' => '',
@@ -84,7 +84,7 @@ class AddDeliveryTextAttribute implements DataPatchInterface, PatchRevertableInt
         $this->moduleDataSetup->getConnection()->startSetup();
         /** @var EavSetup $eavSetup */
         $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
-        $eavSetup->removeAttribute(\Magento\Catalog\Model\Product::ENTITY, 'supplier_stock_quantity');
+        $eavSetup->removeAttribute(\Magento\Catalog\Model\Product::ENTITY, 'delivery_text');
 
         $this->moduleDataSetup->getConnection()->endSetup();
     }
