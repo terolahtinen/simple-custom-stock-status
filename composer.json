@@ -1,0 +1,22 @@
+{
+    "name": "gelo/module-customstockstatus",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "contact@gelo.fi",
+            "name": "Gelo"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Gelo\\CustomStockStatus\\": ""
+        }
+    }
+}

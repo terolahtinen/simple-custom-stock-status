@@ -1,0 +1,10 @@
+<?php
+/**
+ * @var $block \Gelo\CustomStockStatus\Block\CustomStockStatus
+ */
+?>
+<?php $_product = $block->getProduct(); 
+$_deliveryText = $_product->getDeliveryText(); ?>
+	<div class="customdeliverystatus">
+	<?php echo $_deliveryText ?>
+	</div>

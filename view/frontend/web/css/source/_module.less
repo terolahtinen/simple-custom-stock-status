@@ -1,0 +1,30 @@
+@customstockstatus-not: rgb(200, 6, 0);
+@customstockstatus-almost: #f0cc59;
+@customstockstatus-available: #70f059;
+@customstockstatus-margin-right: 0.5em;
+
+
+.customstockstatus-own-stock-available, .customstockstatus-supplier-stock-available, .customstockstatus-out-of-stock, .customstockstatus-availability.available-immediately {
+    padding: 0.1em 0.5em;
+
+}
+.customstockstatus-own-stock-available {
+    background-color: @customstockstatus-available;
+    margin-right: @customstockstatus-margin-right;
+}
+
+.customstockstatus-supplier-stock-available {
+    background-color: @customstockstatus-almost;
+    margin-right: @customstockstatus-margin-right;
+}
+
+.customstockstatus-out-of-stock {
+    background-color: @customstockstatus-not;
+    color: #ffffff;
+    margin-right: @customstockstatus-margin-right;
+}
+
+.customstockstatus-availability.available-immediately {
+    background-color: @customstockstatus-available;
+    margin-left: -0.8em; /* make sure green area is continuous */
+}
