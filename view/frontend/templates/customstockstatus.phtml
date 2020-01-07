@@ -6,5 +6,10 @@
 <?php $_product = $block->getProduct(); 
 $_deliveryText = $_product->getDeliveryText(); ?>
 	<div class="customdeliverystatus">
-	<?php echo $_deliveryText ?>
-	</div>
+<?php if (!empty($_deliveryText)): ?>
+		<?php echo $_deliveryText ?>
+<?php else: ?>
+		<?php echo $this->helper('Gelo\CustomStockStatus\Helper\Data')->getConfig('delivery_status/general/default_text'); ?>
+<?php endif; ?>
+
+</div>
