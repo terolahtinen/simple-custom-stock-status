@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
     <body>
-        <referenceBlock name="product.info.type">
+        <referenceBlock name="product.info.configurable.extra.catalog_inventory_stockqty_composite">
             <action method="setTemplate">
                 <argument name="template" xsi:type="string">Gelo_CustomStockStatus::customstockstatus.phtml</argument>
             </action>
